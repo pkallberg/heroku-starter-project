@@ -9,6 +9,13 @@ class Poi < ActiveRecord::Base
     @lat ||= lonlat.try(:y)
   end
 
+  self.rgeo_factory_generator = RGeo::Geographic.spherical_factory(srid: 4326)
+
+  def nearest
+    order = "lonlat::geometry <-> st_setsrid(st_makepoint(#{lon},#{lat}),4326)"
+    Poi.order(order).offset(1).first
+  end
+
   before_save do
     self[:lonlat] = "POINT(#{lon} #{lat})"
   end
