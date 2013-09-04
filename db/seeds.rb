@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+Poi.delete_all
+geocoded_pois = Rails.root.join('db/geocoded_pois.csv')
+CSV.foreach(geocoded_pois, headers: true) do |poi|
+  Poi.create(
+    name: poi['name'],
+    city: poi['city'],
+    country: poi['country'],
+    lat: poi['lat'],
+    lon: poi['lon']
+  )
+end
