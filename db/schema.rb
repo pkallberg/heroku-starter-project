@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130904092025) do
+ActiveRecord::Schema.define(version: 20130904092711) do
 
   create_table "pois", force: true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20130904092025) do
     t.string   "country"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "lonlat",     limit: nil
   end
 
   create_table "spatial_ref_sys", id: false, force: true do |t|
