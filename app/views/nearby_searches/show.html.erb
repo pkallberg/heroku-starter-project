@@ -1,6 +1,8 @@
 <h1>Poi: <%= @poi.name %></h1>
 <ul>
   <% @nearby_pois.each do |poi| %>
-    <%= content_tag :li, poi.name %>
+    <%= content_tag :li do %>
+      <%= link_to poi.name, nearby_search_path(id: poi.id) %>
+    <% end %>
   <% end %>
 </ul>
