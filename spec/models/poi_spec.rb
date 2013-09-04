@@ -22,6 +22,7 @@ describe Poi do
     end
     it "returns its nearest neighbour" do
       expect(@big_ben.nearest).to eq(@tower_bridge)
+      expect(@pantheon.nearest).to eq(@eiffel_tower)
     end
   end
 end
