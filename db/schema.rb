@@ -19,7 +19,15 @@ ActiveRecord::Schema.define(version: 20130904092711) do
     t.string   "country"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.spatial  "lonlat",     limit: {:srid=>4326, :type=>"point", :geographic=>true}
+    t.string   "lonlat",     limit: nil
+  end
+
+  create_table "spatial_ref_sys", id: false, force: true do |t|
+    t.integer "srid",                   null: false
+    t.string  "auth_name", limit: 256
+    t.integer "auth_srid"
+    t.string  "srtext",    limit: 2048
+    t.string  "proj4text", limit: 2048
   end
 
 end
