@@ -48,3 +48,4 @@ end
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'rack-timeout'
+gem 'rspec-rails', '~> 2.0', group: [:development, :test]
