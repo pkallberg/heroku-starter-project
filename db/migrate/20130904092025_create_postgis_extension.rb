@@ -1,9 +1,5 @@
 class CreatePostgisExtension < ActiveRecord::Migration
-  def up
-    execute "CREATE EXTENSION postgis;"
-  end
-
-  def down
-    execute "DROP EXTENSION postgis;"
+  def change
+    enable_extension :postgis
   end
 end
