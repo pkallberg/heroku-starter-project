@@ -50,6 +50,8 @@ gem 'unicorn'
 gem 'rack-timeout'
 gem 'activerecord-postgis-adapter'
 gem 'high_voltage'
+gem 'haml'
+gem 'rdiscount'
 group :development, :test do
   gem 'rspec-rails', '~> 2.0', group: [:development, :test]
   gem 'factory_girl_rails'
