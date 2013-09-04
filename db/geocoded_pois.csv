@@ -1,0 +1,101 @@
+name,city,country,lat,lon
+Big Ben,London,England,51.5007046,-0.1245748
+St. Paul’s Cathedral,London,England,51.5136792,-0.09956010000000001
+Tower Bridge,London,England,51.50548089999999,-0.07544039999999999
+Nelson’s Column,London,England,51.5077222,-0.1279722
+London Eye,London,England,51.503324,-0.119543
+Houses of Parliament,London,England,51.4997766,-0.1251731
+Buckingham Palace,London,England,51.501364,-0.14189
+Tower of London,London,England,51.50811239999999,-0.0759493
+10 Downing Street,London,England,51.5033563,-0.1276185
+Piccadilly Circus,London,England,51.51005,-0.13377
+Eiffel Tower,Paris,France,48.858,2.2946
+Louvre Museum,Paris,France,48.8610061,2.3359303
+Notre Dame Cathedral,Paris,France,48.85296820000001,2.3499021
+Sacré-Coeur,Paris,France,48.88670459999999,2.3431043
+Champs-Elysées,Paris,France,48.8657844,2.3073141
+Arc de Triomphe,Paris,France,48.873781,2.295026
+Versailles Palace,Paris,France,48.844017,2.2702885
+Jardin du Luxembourg,Paris,France,48.8458212,2.3399796
+Jardin des Tuileries,Paris,France,48.8634916,2.3274943
+Place de la Concorde,Paris,France,48.8653383,2.3214677
+Colosseum,Rome,Italy,41.8902624,12.4923096
+Trevi Fountain,Rome,Italy,41.8929163,12.4825199
+St. Peter’s Basilica,Rome,Italy,41.8076063,12.6811778
+Pantheon,Rome,Italy,41.89862919999999,12.4768665
+Forum Romanum,Rome,Italy,41.8929163,12.4825199
+Circus Maximus,Rome,Italy,41.8861321,12.4851268
+Piazza Navona,Rome,Italy,41.8985481,12.4731253
+Piazza di Spagna,Rome,Italy,41.9058767,12.4822066
+Villa Borghese,Rome,Italy,41.91259429999999,12.4845449
+Palatine Hill,Rome,Italy,41.89049139999999,12.4890319
+Sagrada Família,Barcelona,Spain,41.4035707,2.1744722
+Montjuïc,Barcelona,Spain,41.3641667,2.1580556
+La Rambla,Barcelona,Spain,41.3803103,2.1741552
+Güell Park,Barcelona,Spain,41.4134884,2.1531281
+Casa Batlló,Barcelona,Spain,41.3916164,2.1650132
+Casa Milà,Barcelona,Spain,41.3953087,2.1618354
+La Seu Cathedral,Barcelona,Spain,41.384198,2.176296
+Parc de la Ciutadella,Barcelona,Spain,41.3892574,2.1839982
+Plaça de Catalunya,Barcelona,Spain,41.3879916,2.1701736
+Magic Fountain,Barcelona,Spain,41.3710499,2.1518006
+Trinity College and Library,Dublin,Ireland,53.34396539999999,-6.256857999999999
+O’Connell Street and the General Post Office,Dublin,Ireland,53.349334,-6.261075
+National Museum of Archaeology and History,Dublin,Ireland,53.3405302,-6.255134399999999
+St Patrick’s Cathedral,Dublin,Ireland,53.339496,-6.271497999999999
+Temple Bar,Dublin,Ireland,53.3450903,-6.2638032
+National Gallery,Dublin,Ireland,53.3405302,-6.255134399999999
+Kilmainham Gaol,Dublin,Ireland,53.3417912,-6.3096653
+Dublin Castle,Dublin,Ireland,53.3438712,-6.2663269
+Phoenix Park,Dublin,Ireland,53.3578178,-6.3344998
+Guinness Storehouse,Dublin,Ireland,53.3419363,-6.2866985
+Basilica Cistern,Istanbul,Turkey,41.008385,28.9779451
+Aya Sofya,Istanbul,Turkey,41.0083559,28.9800986
+Topkapi Palace,Istanbul,Turkey,41.013,28.984
+Ayasofya Hürrem Sultan Hamam ,Istanbul,Turkey,41.022168,28.937188
+Blue Mosque,Istanbul,Turkey,41.0053,28.9771
+Istanbul Archaeology Museums,Istanbul,Turkey,41.010853,28.9816261
+Turkish and Islamic Arts Museum,Istanbul,Turkey,41.00613999999999,28.9749071
+Süleymaniye Mosque,Istanbul,Turkey,41.02907099999999,28.939828
+Chora Museum,Istanbul,Turkey,41.00527,28.97696
+Galata Tower,Istanbul,Turkey,41.025623,28.9741561
+Retiro Park,Madrid,Spain,40.4154235,-3.6842358
+Plaza Mayor,Madrid,Spain,40.415364,-3.707398
+Puerta del Sol,Madrid,Spain,40.4171111,-3.7031133
+Gran Via,Madrid,Spain,40.42101479999999,-3.7073402
+Royal Palace,Madrid,Spain,40.417955,-3.714311999999999
+Plaza de España,Madrid,Spain,40.4232289,-3.712592399999999
+Plaza de Cibeles,Madrid,Spain,40.4191667,-3.6930556
+Prado Museum,Madrid,Spain,40.413753,-3.6922423
+Alcala Gate,Madrid,Spain,40.4199699,-3.6886917
+Almudena Cathedral,Madrid,Spain,40.4160875,-3.7142697
+Amsterdam canal ring,Amsterdam,Netherlands,52.3702157,4.895167900000001
+Het Scheepvaart Museum,Amsterdam,Netherlands,52.3716868,4.9148493
+Rijksmuseum,Amsterdam,Netherlands,52.3600036,4.8852147
+Van Gogh Museum,Amsterdam,Netherlands,52.3584159,4.8810756
+Begijnhof,Amsterdam,Netherlands,52.3690793,4.8897729
+Oude Kerk,Amsterdam,Netherlands,52.3743547,4.8979604
+Amsterdam Brown Café,Amsterdam,Netherlands,52.3702157,4.895167900000001
+Magere Brug,Amsterdam,Netherlands,52.3635855,4.902396
+Museum Amstelkring,Amsterdam,Netherlands,52.3702157,4.895167900000001
+Anne Frank House,Amsterdam,Netherlands,52.3752377,4.883945199999999
+Astronomical Clock,Prague,Czech Republic,50.0869966,14.4207734
+The Lennon Wall,Prague,Czech Republic,50.0861739,14.4068098
+Wenceslas Square,Prague,Czech Republic,50.0819846,14.4268666
+Vysehrad Castle,Prague,Czech Republic,50.0789396,14.4129448
+The Dancing House,Prague,Czech Republic,50.075508,14.414054
+The Mucha Museum,Prague,Czech Republic,50.084396,14.4273585
+Old New Synagogue,Prague,Czech Republic,50.09006549999999,14.4185678
+Petrin Hill,Prague,Czech Republic,50.0755381,14.4378005
+The National Museum,Prague,Czech Republic,50.0798753,14.4326121
+Prague Castle,Prague,Czech Republic,50.0903702,14.3989973
+Hofburg,Vienna,Austria,48.207747,16.365863
+Schönbrunn Palace,Vienna,Austria,48.18486480000001,16.3122398
+Belvedere,Vienna,Austria,48.191152,16.3798668
+Stephansdom,Vienna,Austria,48.2084114,16.3734707
+Hundertwasserhaus,Vienna,Austria,48.2074432,16.3935102
+Michaelerplatz,Vienna,Austria,48.20803369999999,16.3668956
+Ringstrasse,Vienna,Austria,48.2515961,16.2801006
+Parlament,Vienna,Austria,48.207959,16.359159
+MuseumsQuartier,Vienna,Austria,48.2029721,16.3587266
+Peterskirche,Vienna,Austria,48.2094309,16.3700841
