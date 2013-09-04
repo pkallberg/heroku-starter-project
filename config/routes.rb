@@ -4,6 +4,7 @@ HerokuStarterProject::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root :to => redirect('/near/1')
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -13,6 +14,7 @@ HerokuStarterProject::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :nearby_searches, only: :show, path: 'near'
 
   # Example resource route with options:
   #   resources :products do

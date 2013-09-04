@@ -1,0 +1,6 @@
+<h1>Poi: <%= @poi.name %></h1>
+<ul>
+  <% @nearby_pois.each do |poi| %>
+    <%= content_tag :li, poi.name %>
+  <% end %>
+</ul>
