@@ -48,6 +48,7 @@ end
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'rack-timeout'
+gem 'activerecord-postgis-adapter'
 group :development, :test do
   gem 'rspec-rails', '~> 2.0', group: [:development, :test]
   gem 'factory_girl_rails'
