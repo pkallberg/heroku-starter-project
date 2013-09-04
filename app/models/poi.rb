@@ -11,9 +11,9 @@ class Poi < ActiveRecord::Base
 
   self.rgeo_factory_generator = RGeo::Geographic.spherical_factory(srid: 4326)
 
-  def nearest
+  def nearest(count=1)
     order = "lonlat::geometry <-> st_setsrid(st_makepoint(#{lon},#{lat}),4326)"
-    Poi.order(order).offset(1).first
+    Poi.order(order).offset(1).limit(count)
   end
 
   before_save do

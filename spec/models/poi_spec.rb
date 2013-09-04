@@ -21,8 +21,11 @@ describe Poi do
       @pantheon = FactoryGirl.create :pantheon
     end
     it "returns its nearest neighbour" do
-      expect(@big_ben.nearest).to eq(@tower_bridge)
-      expect(@pantheon.nearest).to eq(@eiffel_tower)
+      expect(@tower_bridge.nearest).to eq([@big_ben])
+      expect(@pantheon.nearest).to eq([@eiffel_tower])
+    end
+    it "returns its x nearest neighbours" do
+      expect(@tower_bridge.nearest 2).to eq([@big_ben, @eiffel_tower])
     end
   end
 end
