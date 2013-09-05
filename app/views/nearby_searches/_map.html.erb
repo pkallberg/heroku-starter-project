@@ -17,6 +17,8 @@
       title: '<%= @poi.name %>',
       icon: 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png'
     });
+    bounds.extend(marker.getPosition());
+    map.fitBounds(bounds);
 
     //Add nearby markers
     for (var i=0; i<=nearbys.length; i++) {
@@ -29,7 +31,7 @@
         zIndex: 0
       });
     bounds.extend(marker.getPosition());
-      map.fitBounds(bounds);
+    map.fitBounds(bounds);
     }
   }
 
