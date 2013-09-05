@@ -4,7 +4,7 @@ HerokuStarterProject::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root :to => redirect('/near/1')
+  root :to => redirect('/near')
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
