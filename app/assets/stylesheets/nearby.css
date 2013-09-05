@@ -6,6 +6,7 @@
 }
 
 ul.nearby {
-  column-count: 4;
-  -webkit-column-count: 4;
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
 }
