@@ -7,9 +7,7 @@
 <h1>Landmarks near to <%= @poi.name %></h1>
 <ul>
   <% @nearby_pois.each do |poi| %>
-    <%= content_tag :li do %>
-      <%= link_to poi.name, near_path(id: poi.id) %>
-    <% end %>
+    <%= content_tag :li, poi.name %>
   <% end %>
 </ul>
 <%= link_to 'Dev Center Article', page_path('dev-center-article') %>
