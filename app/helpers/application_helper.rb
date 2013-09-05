@@ -5,6 +5,6 @@ module ApplicationHelper
   end
 
   def count_options
-    [2,5,10,25,50,100].map{ |x| [x, x-1] }
+    [2,5,10,20,30,50,100].map{ |x| [x, x-1] }
   end
 end
