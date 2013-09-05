@@ -1,6 +1,14 @@
 class Poi < ActiveRecord::Base
   attr_writer :lon, :lat
 
+  def city_country
+    "#{city}, #{country}"
+  end
+
+  def name_id
+    [name, id]
+  end
+
   def lon
     @lon ||= lonlat.try(:x)
   end
