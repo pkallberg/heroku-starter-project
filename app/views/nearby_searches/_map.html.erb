@@ -1,0 +1,37 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+  function initialize() {
+    var nearbys = new Array();
+    <% @nearby_pois.each_with_index do |poi, i| %>
+      <%= "nearbys[#{i}] = ['#{poi.name}',#{poi.lat},#{poi.lon}];".html_safe %>
+    <% end %>
+    var mapOptions = { zoom: 15, center: null, mapTypeId: google.maps.MapTypeId.ROADMAP }
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    var bounds = new google.maps.LatLngBounds();
+    
+    //Add central marker
+    var centralLatlng = new google.maps.LatLng(<%= @poi.lat %>,<%= @poi.lon %>);
+    var marker = new google.maps.Marker({
+      position: centralLatlng,
+      map: map,
+      title: '<%= @poi.name %>',
+      icon: 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png'
+    });
+
+    //Add nearby markers
+    for (var i=0; i<=nearbys.length; i++) {
+      var nearbyLatlng = new google.maps.LatLng(nearbys[i][1],nearbys[i][2]);
+      var marker = new google.maps.Marker({
+        position: nearbyLatlng,
+        map: map,
+        title: nearbys[i][0],
+        icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
+        zIndex: 0
+      });
+    bounds.extend(marker.getPosition());
+      map.fitBounds(bounds);
+    }
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>

@@ -1,0 +1,5 @@
+<%= form_tag(near_path, method: "get") do %>
+  Select a central landmark:<%= select_tag :poi_id, grouped_options_for_select(poi_options, @poi.id) %><br/>
+  Select number of landmarks to show:<%= select_tag :count, options_for_select(count_options, @count) %><br/>
+  <%= submit_tag("Search") %>
+<% end %>

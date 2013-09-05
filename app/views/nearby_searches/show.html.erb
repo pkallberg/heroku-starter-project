@@ -1,76 +1,18 @@
-<%= form_tag(near_path, method: "get") do %>
-  Select a central landmark: <%= select_tag :poi_id, grouped_options_for_select(poi_options, @poi.id) %><br/>
-  Select number of landmarks to show:<%= select_tag :count, options_for_select(count_options, @count) %><br/>
-  <%= submit_tag("Search") %>
-<% end %>
+<%= render 'form' %>
 
-<h1>Landmarks near to <%= @poi.name %></h1>
-<ul>
+<h1>Landmarks near to <%= @poi.name %> (ordered by distance)</h1>
+
+<div id="map-canvas" style="margin: 0 auto; padding: 0; height: 350px;
+        width: 75%;"></div>
+
+<ul class="nearby">
   <% @nearby_pois.each do |poi| %>
     <%= content_tag :li, poi.name %>
   <% end %>
 </ul>
+
 <%= link_to 'Dev Center Article', page_path('dev-center-article') %>
 
-<div id="map-canvas"></div>
-
 <%= content_for :head do %>
-<style>
-      #map-canvas {
-        margin: 0;
-        padding: 0;
-        height: 300px;
-      }
-    </style>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script>
-function initialize() {
-  var points = new Array();
-  // ['a','b','c'].each_with_index {|a,i| puts i}
-  <% @nearby_pois.each_with_index do |poi, i| %>
-    <%= "points[#{i}] = ['#{poi.name}',#{poi.lat},#{poi.lon}];".html_safe %>
-  // points[1] = ['St. Paul’s Cathedral',51.5136792,-0.09956010000000001];
-  // points[2] = ['Tower Bridge',51.50548089999999,-0.07544039999999999];
-  // points[3] = ['Nelson’s Column',51.5077222,-0.1279722];
-  // points[4] = ['London Eye',51.503324,-0.119543];
-  <% end %>
-  // var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-  // var myLatlng2 = new google.maps.LatLng(-24.363882,131.044922);
-  var mapOptions = {
-    zoom: 15,
-    center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  // var marker = new google.maps.Marker({
-  //     position: myLatlng,
-  //     map: map,
-  //     title: 'Hello World!'
-  // });
-
-  // var marker2 = new google.maps.Marker({
-  //   position: myLatlng2,
-  //   map: map,
-  //   title: 'Hello World!',
-  //   icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
-  // });
-
-  var bounds = new google.maps.LatLngBounds();
-  for (var i=0; i<=points.length; i++) {
-    var myLatlng = new google.maps.LatLng(points[i][1],points[i][2]);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: points[i][0]
-    });
-  bounds.extend(marker.getPosition());
-  // bounds.extend(marker2.getPosition());
-    map.fitBounds(bounds);
-  }
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
+  <%= render 'map' %>
 <% end %>

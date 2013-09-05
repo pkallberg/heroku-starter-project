@@ -1,0 +1,11 @@
+#map-canvas {
+  margin: 0 auto;
+  padding: 0;
+  height: 350px;
+  width: 75%;
+}
+
+ul.nearby {
+  column-count: 4;
+  -webkit-column-count: 4;
+}
