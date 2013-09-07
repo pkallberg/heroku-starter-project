@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130904092711) do
+ActiveRecord::Schema.define(version: 20130907134638) do
 
   create_table "pois", force: true do |t|
     t.string   "name"
@@ -21,5 +21,7 @@ ActiveRecord::Schema.define(version: 20130904092711) do
     t.datetime "updated_at"
     t.spatial  "lonlat",     limit: {:srid=>4326, :type=>"point", :geographic=>true}
   end
+
+  add_index "pois", ["lonlat"], :name => "index_pois_on_lonlat"
 
 end
