@@ -5,7 +5,7 @@
 
   Applications often need to find the N nearest things to a point. For example, a restaurant finder that shows the nearest 10 restaurants to its user’s location.
   
-  ## Setup PostGIS on local
+  ## Enable PostGIS on local
 
     Ensure both [PostgreSQL](http://www.postgresql.org) and [PostGIS](http://postgis.org) are installed on your local machine.
 
@@ -26,7 +26,7 @@
       your_database=> \q
       ```
 
-  ## Setup PostGIS on Heroku
+  ## Enable PostGIS on Heroku
 
   ### Upgrade to a Production tier database
 
@@ -41,11 +41,35 @@
       ```term
       $ heroku pg:psql
       psql (9.1.4, server 9.2.4)
-      
+
       SSL connection (cipher: DHE-RSA-AES256-SHA, bits: 256)
       Type "help" for help.
-      
+
       dbn625oqb52h1v=> CREATE EXTENSION postgis;
       CREATE EXTENSION
       dbn625oqb52h1v=> \q
       ```
+
+  ## Enable PostGIS using a migration (Rails 4)
+
+  Rails 4 offers the convenience of creating PostgreSQL extensions via migrations. The benefits of this are approach are:
+
+  * Removes the need to use `psql`.
+  * Improves development, test, staging and production parity.
+
+
+      ```ruby
+      def change
+        enable_extension :postgis
+      end
+      ```
+
+  ## Create a model
+
+  ### Create a migration
+
+  ### Create a model that can read/write geo point
+
+  ## Implement a nearest neighbor method
+
+  ## Add an index
