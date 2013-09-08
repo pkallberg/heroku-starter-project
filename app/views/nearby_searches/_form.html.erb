@@ -1,5 +1,29 @@
 <%= form_tag(near_path, method: "get") do %>
-  Select a central landmark:<%= select_tag :poi_id, grouped_options_for_select(poi_options, @poi.id) %><br/>
-  Select number of landmarks to show:<%= select_tag :count, options_for_select(count_options, @count) %><br/>
-  <%= submit_tag("Search") %>
+  <div class="row">
+    <div class="small-8">
+      <div class="row">
+        <div class="small-6 columns">
+          <%= label_tag :poi_id, 'Central landmark', class: 'right inline' %>
+        </div>
+        <div class="small-6 columns">
+          <%= select_tag :poi_id, grouped_options_for_select(poi_options, @poi.id) %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns">
+          <%= label_tag :count, 'Number to show', class: 'right inline' %>
+        </div>
+        <div class="small-6 columns">
+          <%= select_tag :count, options_for_select(count_options, @count) %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns">
+        </div>
+        <div class="small-6 columns">
+          <%= submit_tag "Search", class: 'tiny button' %>
+        </div>
+      </div>
+    </div>
+  </div>
 <% end %>
