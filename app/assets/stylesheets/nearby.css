@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-ul.nearby {
+ol.nearby {
   columns: 4;
   -webkit-columns: 4;
   -moz-columns: 4;
