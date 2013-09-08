@@ -1,12 +1,12 @@
-/*#map-canvas {
+#map-canvas {
   margin: 0 auto;
   padding: 0;
   height: 350px;
-  width: 75%;
+  width: 100%;
 }
 
 ul.nearby {
   columns: 4;
   -webkit-columns: 4;
   -moz-columns: 4;
-}*/
+}

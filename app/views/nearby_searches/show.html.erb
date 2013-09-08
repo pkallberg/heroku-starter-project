@@ -1,9 +1,8 @@
 <%= render 'form' %>
 
-<h3>Landmarks near to <%= @poi.name %> (ordered by distance)</h3>
+<div id="map-canvas"></div>
 
-<div id="map-canvas" style="margin: 0 auto; padding: 0; height: 350px;
-        width: 75%;"></div>
+<h3>Landmarks near to <%= @poi.name %> (ordered by distance)</h3>
 
 <ul class="nearby">
   <% @nearby_pois.each do |poi| %>
