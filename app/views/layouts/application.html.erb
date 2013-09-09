@@ -20,16 +20,15 @@
     <%= csrf_meta_tags %>
     <%= yield :head %>
   </head>
-
   <body>
-<nav class="top-bar">
+    <nav class="top-bar">
       <ul class="title-area">
         <!-- Title Area -->
         <li class="name">
           <h1><%= link_to 'Heroku Starter Project', root_url %></h1>
         </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Pages</span></a></li>
       </ul>
-
       <section class="top-bar-section">
         <ul class="left">
           <li><%= link_to 'Demo', root_url %></li>
@@ -37,13 +36,11 @@
         </ul>
       </section>
     </nav>
-<div class="row">
-  <div class="small-10 large-centered columns"><%= yield %></div>
-</div>
-
-    
-
-    
+    <div class="row">
+      <div class="small-10 small-centered columns">
+        <%= yield %>
+      </div>
+    </div>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
