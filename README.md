@@ -1,12 +1,23 @@
 # heroku-starter-project
 
-## Outline
+## Finding the N nearest things to a point using Rails and PostGIS on Heroku
 
-How do I find the N nearest things to this point? (using Heroku, Rails and
-PostGIS)
+My starter project at [Heroku](http://www.heroku.com) involved working with
+Rails and PostGIS to finding the N nearest things to a point. It was fun
+creating:
 
-## Deliverables
+* [A demo](http://http://heroku-starter-project.herokuapp.com/near)
+* [Documentation in the style of Dev Center](http://heroku-starter-project.herokuapp.com/pages/dev-center-article)
+* [A keynote of my findings](http://http://heroku-starter-project.herokuapp.com/keynote)
 
-* [Prototype app](http://heroku-starter-project.herokuapp.com)
-* ‘How to’ article suitable for Heroku Dev Center, written in Markdown
-* Presentation of project
+## Thanks…
+
+* Abe Pursell
+* Clint Shryock
+* Craig Kerstiens
+* Greg Nokes
+* Harold Giménez
+* Jon Mountjoy
+* Neil Middleton
+* Phil Ripperger
+* Ryan Daigle
