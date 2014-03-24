@@ -1,0 +1,11 @@
+production: 
+    rails: 
+        server:
+            unique_name: frontend
+    postgresql:
+        postgresql:
+            version: 9.3.4
+        geos:
+            version: 3.4.2
+        postgis:
+            version: 2.1.1 
