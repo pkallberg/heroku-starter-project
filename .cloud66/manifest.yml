@@ -4,10 +4,10 @@ production:
             unique_name: frontend
     postgresql:
        server: 
-            unique_name: postgresql
+            same_as: frontend
        configuration:
-           version: 9.2.3
+           version: 9.3.4
            postgis:
-               version: 2.0.3
+               version: 2.1.1
            geos:
-               version: 3.3.8
+               version: 3.4.2
